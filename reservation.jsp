@@ -65,7 +65,6 @@
                         <label for="psg_age">Passenger's Age</label>
                         <input type="number" name="1b" id="psg_age" class="input_field1" style="margin-top:8%; margin-left:4.6%;" max="100" min="10" placeholder="Enter your age">
                         <label for="psg_age">Gender</label>
-                        <!--input type="number" name="1b" id="psg_age" class="input_field1" placeholder="Enter your age"-->
                         <select class="sel" style="margin-left:4.6%;">
                             <option class="opt1" value="Male">Male</option><option class="opt1" value="Female">Female</option></select>
                         <input type="button" value="Add More Field" onclick="add_field()" class="add_field">
@@ -74,6 +73,13 @@
                     <div id="y"></div>
                     <!--input type="button" value="add more" onclick="add()"-->
                     <input type="number" hidden value="1" name="counter" id="count">
+                    <h1 style="text-align:center; text-shadow:0px 0px 10px #006699; color:#006699; font-family:Bell MT;">Card Details</h1><hr color="#006699"/>
+                    <!--<label for="">Card Number</label>-->
+                    <input type="text" placeholder="Enter Card Number" class="input_field1" name="cardNum" required>
+                    <!--<label for="">Name on Card</label>-->
+                    <input type="text" placeholder="Name on Card" class="input_field1" name="cardName" required>
+                    <!--<label for="">Exp Date</label>-->
+                    <input type="month" placeholder="Expiry Date" class="input_field1" name="cardExp" required title="Enter Card Expiry Date">
                     <input type="submit" value="Submit" class="add_field" style="margin-top:2%; margin-left:83.5%;">
                 </form>
             <% } %>

@@ -28,8 +28,12 @@
     ResultSet rs = st.executeQuery(query);
     String n = request.getParameter("num");
     String q = "select * from train where train_id = '"+n+"';";
+    
+    String cardName = request.getParameter("cardName");
+    String cardNum = request.getParameter("cardNum");
+    String cardExp = request.getParameter("cardExp");
     java.text.DateFormat df = new java.text.SimpleDateFormat("yyyy-MM-dd");
-    String pay = "insert into payment_info (pay_by, pay_date) values('"+((String)session.getAttribute("user"))+"','"+(df.format(new java.util.Date()))+"')";
+    String pay = "insert into payment_info (pay_by, card_num, expiry, card_name, pay_date) values('"+((String)session.getAttribute("user"))+"','"+cardNum+"','"+cardExp+"','"+cardName+"','"+(df.format(new java.util.Date()))+"')";
     int demo = stPay.executeUpdate(pay);
     ResultSet r_set = st1.executeQuery(q);
     if(rs.next())   {

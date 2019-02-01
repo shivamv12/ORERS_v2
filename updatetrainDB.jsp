@@ -13,7 +13,8 @@
     String g = request.getParameter("class");
     String h = request.getParameter("seats");
     String i = request.getParameter("status");
-    String query = "insert into train values ('"+a+"','"+b+"','"+c+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"','"+i+"');";
+    String j = request.getParameter("jdate");
+    String query = "insert into train values ('"+a+"','"+b+"','"+c+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"','"+i+"', '"+j+"');";
     int check = st.executeUpdate(query);
     if(check == 1)  {
     out.print("<script> alert('Entry Successfull.!'); </script>");

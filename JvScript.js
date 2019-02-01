@@ -204,6 +204,13 @@ function validate() {
         alert("Please select different cities.!");
         return false;
     }
+	
+    // New line for updation
+    else if(document.getElementById("journeyDate").value === "")) {
+	alert("Select Journey Date");
+	return false;
+    }
+    
     else {
         //loadDoc();
         return true;
@@ -219,8 +226,10 @@ function loadDoc() {
     };
     var s = document.getElementById("selct").value;
     var d = document.getElementById("selct1").value;
+    // New Line for Updation
+    var Jdate = document.getElementById("journeyDate").value;
 
-    xhttp.open("GET", "searchtrain.jsp?source="+s+"&dest="+d, true);
+    xhttp.open("GET", "searchtrain.jsp?source="+s+"&dest="+d+"&date="+Jdate, true);
     xhttp.send();
 }
 

@@ -48,6 +48,7 @@
                             <option><%= rs1.getString(1) %></option>
                         <% }%>
                     </select>
+                    Journey Date: <input type="date" name="jday" id="journeyDate">
                     <input type="button" value="Search Train" onclick="loadDoc(), validate()" class="srch_train">
                 </form>
             </div>

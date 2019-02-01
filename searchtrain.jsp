@@ -6,7 +6,8 @@
     Statement st = con.createStatement();
     String source = request.getParameter("source");
     String dest = request.getParameter("dest");
-    String q = "select * from train where source = '"+source+"' and destination = '"+dest+"';";
+    String jdate = request.getParameter("date");
+    String q = "select * from train where source = '"+source+"' and destination = '"+dest+"' and jDate = '"+jdate+"';";
     ResultSet rs = st.executeQuery(q);  %>
     <style>
         th { border-bottom:1px solid black; font-family:Arial Rounded MT; border-radius:5px; text-align:center; color:#006699; padding:0.4%; font-size:1.1em; }

@@ -47,6 +47,7 @@
                     <label>Available Class</label> <input type="text" name="class" placeholder="Use , Sepration(1AC, 2AC..)"><br/>
                     <label>Seat Availability</label> <input type="text" name="seats" placeholder="Available Seats"><br/>
                     <label>Weekly Status</label> <input type="text" name="status" placeholder="Enter weekly status"><br/>
+                    <label>Weekly Status</label> <input type="date" name="jdate" placeholder="Enter Runing Date"><br/>
                     <input type="submit" style="width:20%;">
                 </form>
             </div>
